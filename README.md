@@ -1,28 +1,20 @@
-# amarcelo-cv
-Curriculum Vitae of Dr Alvin B. Marcelo
+# Curriculum Vitae of Dr Alvin B. Marcelo
 
 Alvin Valeriano de Borja Marcelo, MD, FPCS
-CURRICULUM VITAE
-resume
+
 PERSONAL DATA
+
 ADDRESS : 547 Pedro Gil Street, Ermita, Manila, PHILIPPINES
 
-SEX : Male CIVIL STATUS : Married
+PHILIPPINE OFFICE ADDRESS: Medical Informatics Unit, University of the Philippines Manila - College of Medicine
 
-CITIZENSHIP : Filipino
-
-DATE OF BIRTH : April 14, 1966 PLACE OF BIRTH : Quezon City, Manila, Philippines
-
-PHILIPPINE OFFICE ADDRESS : National Telehealth Center, 3/F Philippine General Hospital, Taft Avenue, Manila, Philippines 1000
-
-DAYTIME NUMBER : (632) 426-2315 
-
-FAX NUMBER : (632) 525-6501
-ELECTRONIC MAIL: alvin DOT marcelo AT gmail DOT com
+ELECTRONIC MAIL: admarcelo AT up DOT edu DOT ph
 
 
 EDUCATIONAL BACKGROUND
+
 POST-DOCTORAL TRAINING: Visiting Scientist and Fellow in Medical Informatics, National Library of Medicine, National Institutes of Health, Bethesda, Maryland, USA (1999-2001)
+
 RESIDENCY TRAINING : General Surgery Program. Department of Surgery, University of the Philippines-Philippine General Hospital Medical Center January 1992-December 1996
 
 POST-GRADUATE EDUCATION : University of the Philippines College of Medicine, INTARMED Program* 1984-1991 (Class 1941 Leadership Award)
@@ -30,6 +22,7 @@ POST-GRADUATE EDUCATION : University of the Philippines College of Medicine, INT
 COLLEGE EDUCATION : BS Basic Medical Sciences, University of the Philippines College of Medicine 1984-1988. INTARMED Program*
 
 SECONDARY EDUCATION : Ateneo de Manila High School. 1980-1984 (First Honors)
+
 PRIMARY EDUCATION : Ateneo de Manila. 1971-1980. (First Honorable Mention)
 
 Sylim P, Liu F, Marcelo A, Fontelo P. Blockchain Technology for Detecting Falsified and Substandard Drugs in Distribution: Pharmaceutical Supply Chain Intervention. JMIR Res Protoc 2018;7(9):e10163. DOI:10.2196/10163
