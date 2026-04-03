@@ -26,6 +26,8 @@ DONE_DIR = Path("done")
 CV_FILE = Path("README.md")
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".gif", ".webp"}
+PDF_EXTENSIONS = {".pdf"}
+SUPPORTED_EXTENSIONS = IMAGE_EXTENSIONS | PDF_EXTENSIONS
 
 # The insertion anchor: new certifications go right before POST-DOCTORAL TRAINING
 INSERT_BEFORE_PATTERN = re.compile(r"^POST-DOCTORAL TRAINING", re.MULTILINE)
@@ -38,23 +40,15 @@ def _cert_line_exists(cv_text: str, cert_line: str) -> bool:
 # ---------------------------------------------------------------------------
 # Step 1 – extract certificate info via Claude vision
 # ---------------------------------------------------------------------------
-def extract_certificate_info(client: anthropic.Anthropic, image_path: Path) -> dict:
+def extract_certificate_info(client: anthropic.Anthropic, file_path: Path) -> dict:
     """Return a dict with keys: title, issuer, date, recipient (all strings)."""
-    suffix = image_path.suffix.lower()
-    media_type_map = {
-        ".jpg": "image/jpeg",
-        ".jpeg": "image/jpeg",
-        ".png": "image/png",
-        ".gif": "image/gif",
-        ".webp": "image/webp",
-    }
-    media_type = media_type_map.get(suffix, "image/jpeg")
+    suffix = file_path.suffix.lower()
 
-    with open(image_path, "rb") as f:
-        image_data = base64.standard_b64encode(f.read()).decode("utf-8")
+    with open(file_path, "rb") as f:
+        file_data = base64.standard_b64encode(f.read()).decode("utf-8")
 
     prompt = (
-        "You are reading a certificate image. Extract the following fields exactly as they appear:\n"
+        "You are reading a certificate. Extract the following fields exactly as they appear:\n"
         "1. Certificate title / name of certification\n"
         "2. Issuing organization\n"
         "3. Date issued (month and year if available, otherwise just year)\n"
@@ -67,6 +61,32 @@ def extract_certificate_info(client: anthropic.Anthropic, image_path: Path) -> d
         "If a field is not visible, write N/A for that field."
     )
 
+    if suffix == ".pdf":
+        content_block = {
+            "type": "document",
+            "source": {
+                "type": "base64",
+                "media_type": "application/pdf",
+                "data": file_data,
+            },
+        }
+    else:
+        media_type_map = {
+            ".jpg": "image/jpeg",
+            ".jpeg": "image/jpeg",
+            ".png": "image/png",
+            ".gif": "image/gif",
+            ".webp": "image/webp",
+        }
+        content_block = {
+            "type": "image",
+            "source": {
+                "type": "base64",
+                "media_type": media_type_map.get(suffix, "image/jpeg"),
+                "data": file_data,
+            },
+        }
+
     response = client.messages.create(
         model="claude-opus-4-6",
         max_tokens=512,
@@ -74,14 +94,7 @@ def extract_certificate_info(client: anthropic.Anthropic, image_path: Path) -> d
             {
                 "role": "user",
                 "content": [
-                    {
-                        "type": "image",
-                        "source": {
-                            "type": "base64",
-                            "media_type": media_type,
-                            "data": image_data,
-                        },
-                    },
+                    content_block,
                     {"type": "text", "text": prompt},
                 ],
             }
@@ -173,13 +186,13 @@ def main():
     IN_DIR.mkdir(parents=True, exist_ok=True)
     DONE_DIR.mkdir(parents=True, exist_ok=True)
 
-    images = [
+    files = [
         p for p in IN_DIR.iterdir()
-        if p.is_file() and p.suffix.lower() in IMAGE_EXTENSIONS
+        if p.is_file() and p.suffix.lower() in SUPPORTED_EXTENSIONS
     ]
 
-    if not images:
-        print(f"No certificate images found in {IN_DIR}/  (supported: {', '.join(IMAGE_EXTENSIONS)})")
+    if not files:
+        print(f"No certificate files found in {IN_DIR}/  (supported: {', '.join(sorted(SUPPORTED_EXTENSIONS))})")
         sys.exit(0)
 
     api_key = os.environ.get("ANTHROPIC_API_KEY")
@@ -190,11 +203,11 @@ def main():
     client = anthropic.Anthropic(api_key=api_key)
 
     all_ok = True
-    for image_path in sorted(images):
+    for image_path in sorted(files):
         print(f"\nProcessing: {image_path.name}")
 
         # 1. Extract info
-        print("  Extracting certificate data via Claude vision...")
+        print("  Extracting certificate data via Claude...")
         info = extract_certificate_info(client, image_path)
         print(f"  Title    : {info['title']}")
         print(f"  Issuer   : {info['issuer']}")
