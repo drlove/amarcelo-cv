@@ -28,30 +28,51 @@ SECONDARY EDUCATION : Ateneo de Manila High School. 1980-1984 (First Honors)
 PRIMARY EDUCATION : Ateneo de Manila. 1971-1980. (First Honorable Mention)
 
 Sylim P, Liu F, Marcelo A, Fontelo P. Blockchain Technology for Detecting Falsified and Substandard Drugs in Distribution: Pharmaceutical Supply Chain Intervention. JMIR Res Protoc 2018;7(9):e10163. DOI:10.2196/10163
+
 Marcelo A, Fatmi Z, Firaza PN, Shaikh S, Dandan AJ, Irfan M, Bari V, Scott RE: An online method for diagnosis of difficult TB cases for developing countries. Stud Health Technol Inform; 2011;164:168-73 PMID: 21335706
+
 Marcelo A, Jai Ganesh, Jai Mohan, D. B. Kadam, B. S. Ratta, Gumindu Kulatunga, Sheila John, et al. 2015. â€œGovernance and Management of National Telehealth Programs in Asia.â€ Studies in Health Technology and Informatics 209: 95â-101.
+
 Marcelo A, Adejumo A, Luna D. Health Informatics for Development: a Three-pronged Strategy of Partnerships, Standards, and Mobile Health. Contribution of the IMIA Working Group on Health Informatics for Development. Yearb Med Inform; 2011;6(1):96-101, PMID: 21938332
+
 Batista-Navarro RTB, Bandojo DA, Gatapia, M A Jaymee Krisette, et al. ESP: an expert system for poisoning diagnosis and management. Informatics for health & social care. 2010;35:53-63.
+
 Marcelo A. Telehealth in the Philippines. In Telehealth in Developing Countries. Edited by Richard Wootton, Nivritti G. Patil, Richard E. Scott, and Kendall Ho. Royal Society of Medicine Press/IDRC 2009 ISBN 978-1-85315-784-4 e-ISBN 978-1-55250-396-6 324 pp.
 Alis C, del Rosario C, Buenaobra B, Blanca C. Lifelink: 3G-Based Mobile Telemedicine System. TELEMEDICINE JOURNAL AND E-HEALTH. 2009;15:241-247.
 Marcelo, Alvin B. Health Informatics in the Philippines [online]. In: Medinfo 2007: Proceedings of the 12th World Congress on Health (Medical) Informatics; Building Sustainable Health Systems; pages: [2481]-[2483]. Kuhn, Klaus A (Editor); Warren, James R (Editor); Leong, Tze-Yun (Editor). Amsterdam: IOS Press, 2007. Studies in health technology and informatics, ISSN 0926-9630 ; v. 129. Availability: ISBN: 9781586037741. [cited 02 Mar 09].
+
 Marcelo A, Gumapos M. Telehealth Initiatives in the Philippines. Journal of eHealth Technology and Application, Volume 5, Number 2 June 2007.
+
 Marcelo A. Health Information Interoperability (page 1) (page 2). Health Intel,a publication of Zuelling Foundation, Special Edition 2005.
+
 Marcelo A, Cualing H, Farolan M, Fontelo P. Effect of Image Compression in Telepathology: a Randomized Controlled Trial. Arch Pathol Lab Med. 2000 Nov;124(11):1653-6 (presented as an electronic poster at the Advancing Pathology Informatics, Imaging, and the Internet Conference, Marriot City Center, Pittsburgh, Pennsylvania, October 14-16, 1999. Also at the Second Senior Arctic Council Meeting, U.S. State Department, Washington, D.C., November 18, 1999.
+
 Marcelo A. An Analysis of Philippine-oriented biomedical literature in MEDLINE from 1963-1999. J Philippine Dent Assoc 1999 Sep-Nov; 51(2):20-7.
+
 Marcelo AB. Developing Healthcare Applications using Common Open Source Medical Objects (COSMOS). Proceedings of the AMIA Symposium. 2000:1079-1079
+
 Marcelo A. A Comparison of Open Source Electronic Medical Records Systems. Proceedings of the AMIA Symposium. 2000:1078-1078.
+
 Marcelo A. Tolentino H, Marcelo A, Marcelo P, Maramba I. Linking primary care information systems and public health vertical programs in the Philippines: an open-source experience. AMIA ... Annual Symposium proceedings / AMIA Symposium. AMIA Symposium. 2005;2005:311-315.
+
 Bernal ABS, Tolentino PAP, Gavino AI, Fontelo P, Marcelo AB. Nursing informatics: challenges to Philippine nursing curriculum. AMIA ... Annual Symposium proceedings / AMIA Symposium. AMIA Symposium. 2008:876.
+
 Marcelo A (editor). Standards for Health Information in the Philippines 1999. National Institutes of Health, University of the Philippines Manila, 1999.
+
 Marcelo A. Internet Relay Chat Conferences: A New Method of Delivering Continuing Medical Education for Filipinos. Acta Medica Philippina, 1998.
 
 
 MEDICAL INFORMATICS: SCIENTIFIC PAPERS
+
 Marcelo A, Ramos B, dela Rosa J et al. Evaluation of the Decentralized Field Health Service Information System (DFHSIS) in Selected Infectious Disease Surveillance and Control Project (IDSCP) Sites. Department of Health, 2004. Commissioned research by the IDSCP through a grant from the United States Agency for International Development (USAID).
+
 Tolentino H, Marcelo A, Marcelo P, Maramba I et al. Community Health Information Tracking System (CHITS). Funded in part by a grant from Panasia and the International Development Research Centre (IDRC Canada).
+
 Tolentino H, Maramba I, Marcelo A. Mekong Basin Disease Surveillance Project. Commissioned by the World Health Organization and funded in part by the Rockefeller Foundation.
+
 Arcilla E, Marcelo A. Palmar Scanning: Redefining a Burn Chart for Filipinos (from Slice of Life) (from local file). Department of Surgery, UP College of Medicine, 2nd prize, Inventors and Innovators Contest, University of the Philippines Manila, May 1997. 
+
+
 E-HEALTH ORAL/POSTERS/DEMONSTRATIONS/PRESENTATIONS
 
 Marcelo A. Asia eHealth Information Network's National eHealth Capacity Roadmap, Greater China Health IT Conference, Kunming, China, July 25, 2014.
