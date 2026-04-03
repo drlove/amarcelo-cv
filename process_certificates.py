@@ -14,6 +14,7 @@ import os
 import re
 import shutil
 import sys
+from datetime import datetime
 from pathlib import Path
 
 import anthropic
@@ -158,14 +159,13 @@ def insert_certification(cv_path: Path, cert_line: str) -> bool:
 # ---------------------------------------------------------------------------
 def move_to_done(image_path: Path) -> Path:
     DONE_DIR.mkdir(parents=True, exist_ok=True)
-    dest = DONE_DIR / image_path.name
-    # Avoid overwriting an existing file in done/
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    dest = DONE_DIR / f"{image_path.stem}_inserted_{timestamp}{image_path.suffix}"
+    # Avoid overwriting if somehow the same second is hit twice
     if dest.exists():
-        stem = image_path.stem
-        suffix = image_path.suffix
         counter = 1
         while dest.exists():
-            dest = DONE_DIR / f"{stem}_{counter}{suffix}"
+            dest = DONE_DIR / f"{image_path.stem}_inserted_{timestamp}_{counter}{image_path.suffix}"
             counter += 1
     shutil.move(str(image_path), str(dest))
     return dest
@@ -216,7 +216,7 @@ def main():
 
         # 2. Format CV line
         cert_line = format_cert_line(info)
-        print(f"  CV line  : {cert_line}")
+        print(f"\n  >>> CV line to be inserted:\n  {cert_line}\n")
 
         # 3. Insert into CV
         inserted = insert_certification(CV_FILE, cert_line)
