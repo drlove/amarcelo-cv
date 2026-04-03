@@ -13,6 +13,8 @@ ELECTRONIC MAIL: admarcelo AT up DOT edu DOT ph
 
 EDUCATIONAL BACKGROUND
 
+CERTIFICATION Certificate of Appreciation - University of the Philippines - Philippine General Hospital, Department of Family and Community Medicine - March 2026
+CERTIFICATION Certificate of Appearance - Pulong Para sa National ID: Strengthening Healthcare Access through Integration with the National ID Authentication Services - Philippine Statistics Authority (PSA) - PhilSys Registry Office - January 2026
 POST-DOCTORAL TRAINING: Visiting Scientist and Fellow in Medical Informatics, National Library of Medicine, National Institutes of Health, Bethesda, Maryland, USA (1999-2001)
 
 RESIDENCY TRAINING : General Surgery Program. Department of Surgery, University of the Philippines-Philippine General Hospital Medical Center January 1992-December 1996
